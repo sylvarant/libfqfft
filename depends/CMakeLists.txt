@@ -1,4 +1,6 @@
-add_subdirectory(gtest EXCLUDE_FROM_ALL)
+if(${DO_TESTS})
+  add_subdirectory(gtest EXCLUDE_FROM_ALL)
+endif()
 
 if(${CURVE} STREQUAL "BN128")
   include_directories(ate-pairing/include)

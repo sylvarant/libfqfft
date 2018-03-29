@@ -34,6 +34,12 @@ option(
   ON
 )
 
+option(
+  DO_TESTS
+  "disable test compilation"
+  OFF
+)
+
 set(
   OPT_FLAGS
   ""
